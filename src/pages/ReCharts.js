@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import CustomActiveShapePieChart from '../components/recharts/CustomActiveShapePieChart'
-import PercentageChart from '../components/recharts/PercentageChart'
+import { CustomActiveShapePieChart, PercentageChart } from '../components'
 
 
 const ReCharts = () => {

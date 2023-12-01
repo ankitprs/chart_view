@@ -20,6 +20,6 @@ export const options = {
   },
 };
 
-export default function ChartScatter() {
+export default function ScatterChart() {
   return <Scatter options={options} data={data_scatter} />;
 }

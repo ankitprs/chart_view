@@ -4,8 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import ReactChart from './components/react_charts/chart'
-import GraphChart from './pages/ReactJSChart';
+import ReactJSChart from './pages/ReactJSChart';
 import ReCharts from './pages/ReCharts'
 import ApexChart from './pages/ApexChart'
 
@@ -15,7 +14,7 @@ root.render(
     <Router>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/react-chart" element={<GraphChart />} />
+        <Route path="/react-chart" element={<ReactJSChart />} />
         <Route path="/recharts" element={<ReCharts />} />
         <Route path="/apexcharts" element={<ApexChart />} />
         <Route path="*" element={<div>404 Not Found</div>} />

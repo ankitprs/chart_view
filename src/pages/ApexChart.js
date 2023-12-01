@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import ApexChart_bar from '../components/apexcharts/ApexChartBar'
-import DonutChart from '../components/apexcharts/ApexChartDonut';
+import { ApexChartBar, ApexChartDonut } from '../components'
 
 
 const ApexChart = () => {
@@ -8,9 +7,9 @@ const ApexChart = () => {
 
   const ReactJSChart = () => {
     return chartId ? (
-      <ApexChart_bar />
+      <ApexChartBar />
     ) : (
-      <DonutChart />
+      <ApexChartDonut />
     )
   }
 

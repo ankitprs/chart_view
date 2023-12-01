@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import MultitypeChart from '../components/react_charts/chart'
-import ChartScatter from '../components/react_charts/chartScatter'
+import { MultitypeChart, ScatterChart } from '../components'
 
 
 const GraphChart = () => {
@@ -10,7 +9,7 @@ const GraphChart = () => {
     return chartId ? (
       <MultitypeChart />
     ) : (
-      <ChartScatter />
+      <ScatterChart />
     )
   }
 
