@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { CustomActiveShapePieChart, PercentageChart } from '../components'
+import { useNavigate } from 'react-router-dom'
 
 
 const ReCharts = () => {
   const [chartId, setChartId] = useState(true)
+  const navigate = useNavigate()
 
   const ReactJSChart = () => {
     return chartId ? (
@@ -21,6 +23,14 @@ const ReCharts = () => {
         </button>
         <button className={`text-white px-6 py-3 rounded-md mr-4  focus:outline-none  ${chartId ? 'bg-gray-700' : 'bg-blue-500'}`} onClick={() => setChartId(false)}>
           Percentage Chart
+        </button>
+        <button
+          className="mr-4 py-3 px-6 rounded text-white bg-red-500"
+          onClick={() => {
+            navigate('/')
+          }}
+        >
+          Close
         </button>
       </div>
       <div className="w-full h-full bg-white rounded-lg overflow-hidden relative">
