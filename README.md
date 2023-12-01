@@ -1,3 +1,3 @@
 # Graph View project 
 
-Live url - ...
+Live url - https://chart-view-delta.vercel.app/react-chart
